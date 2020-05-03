@@ -1,0 +1,119 @@
+/*
+** Main Slick Sliders
+*/
+
+.slick-gallery {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+}
+
+.slick-gallery.slick-initialized {
+  visibility: visible;
+  opacity: 1;
+}
+
+.slick-gallery__front-page {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+}
+
+.slick-gallery__front-page.slick-initialized {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*
+** Main Projects Slick Sliders
+*/
+
+.slick-gallery__projects-main {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+  max-width: 500px;
+}
+
+.slick-gallery__projects-main.slick-initialized {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*
+** Main Projects Slick Sliders
+*/
+
+.slick-gallery__about {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.slick-gallery__about.slick-initialized {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*
+** Single Project Sliders
+*/
+.slick-gallery__projects {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+  margin: 0 auto;
+
+  .slick-list {
+    height: 425px;
+    max-width: 700px;
+    overflow: hidden;
+  }
+}
+
+.slick-gallery__projects * .slick-slide {
+  max-height: 75vh;
+  // overflow: hidden;
+}
+
+.slick-gallery__projects * img {
+  margin: 0 auto;
+}
+
+.slick-gallery__projects.slick-initialized {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-gallery-arrow {
+  border: none;
+  background: transparent;
+  color: $white;
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 1;
+  padding: 0.8em;
+  cursor: pointer;
+}
+
+.projects-gallery-previous {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  z-index: 99;
+}
+
+.projects-gallery-next {
+  position: absolute;
+  bottom: -35px;
+  right: 0;
+  z-index: 99;
+}
+
+.projects-main-gallery-container {
+  width: 500px;
+}

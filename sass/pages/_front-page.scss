@@ -1,0 +1,119 @@
+// Front Page
+body.home {
+  .site-content {
+    margin-top: -120px;
+    // Top Hero Image and Title Text
+    .fp-intro-container {
+      .fp-intro-image {
+        height: 95vh;
+        overflow: hidden;
+        transition: all 1200s ease-in-out;
+
+        @media screen and (max-width: 810px) {
+          height: auto;
+        }
+
+        img {
+          opacity: 1;
+        }
+
+        .fp-hero-gallery {
+          padding-left: 0;
+          margin-top: 0;
+
+          .slick-list .slick-track {
+            margin-right: 0;
+          }
+
+          .slick-list .slick-slide img {
+            min-width: 1100px;
+
+            @media screen and (max-width: 420px) {
+              min-width: 950px;
+            }
+          }
+        }
+      }
+    }
+
+    // Second section under big image
+    .fp-second-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 5vh;
+
+      @media screen and (max-width: 810px) {
+        flex-direction: column;
+      }
+
+      .fp-about-paragraph {
+        width: 50%;
+        padding: 2.5rem 1.5rem 2.5rem 2.5rem;
+        transition: opacity 800ms ease-in, transform 800ms ease-in;
+
+        @media screen and (max-width: 810px) {
+          width: 90%;
+          margin: 0 auto;
+          padding: 1rem;
+        }
+      }
+
+      // Project Lists Section
+      .project-list-container {
+        width: 50%;
+        padding: 2.5rem 1.5rem 2.5rem 2.5rem;
+        transition: opacity 800ms ease-in, transform 800ms ease-in;
+        transition-delay: 500ms;
+
+        @media screen and (max-width: 840px) {
+          margin: 0 0 5% 3%;
+        }
+
+        @media screen and (max-width: 810px) {
+          width: 90%;
+          margin: 0 auto;
+          padding: 1rem;
+          margin-top: 5vh;
+        }
+
+        .project-title {
+          margin-bottom: 1rem;
+        }
+
+        .project-list-title {
+          display: inline-block;
+          margin-top: 0;
+        }
+
+        .accordion {
+          border-bottom: 1px solid $white;
+
+          .fa-caret-down {
+            color: $white;
+            margin-left: 0.7em;
+          }
+        }
+
+        .accordion-toggle {
+          display: inline-block;
+          cursor: pointer;
+          margin-bottom: 0.5rem;
+        }
+
+        .accordion-toggle:hover * {
+          // color: $white-hover;
+        }
+
+        .accordion-content {
+          display: none;
+          list-style: none;
+          padding: 0 0.5em 0;
+
+          li {
+            margin-bottom: 0.8rem;
+          }
+        }
+      }
+    }
+  } // End of Second Row
+}

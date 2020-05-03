@@ -1,0 +1,118 @@
+.projects-main {
+  display: flex;
+  max-width: 1300px;
+  margin-top: 10vh;
+
+  @media screen and (max-width: 930px) {
+    flex-direction: column;
+    margin-bottom: 5vh;
+  }
+
+  .project-archive-column_1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3em;
+    width: 55%;
+    transition: opacity 1.2s ease-in, transform 1.2s ease-in;
+
+    @media screen and (max-width: 930px) {
+      width: 90%;
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    .project-archive-title {
+      margin-bottom: 2rem;
+    }
+
+    .project-archive-paragraph {
+      margin-bottom: 2rem;
+    }
+
+    .project-list-container {
+      width: 100%;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+
+      .project-list-title {
+        display: inline-block;
+        font-weight: 300;
+        margin: 0.5rem 0;
+      }
+
+      .accordion {
+        .fa-caret-down {
+          color: $white;
+          margin-left: 0.7rem;
+        }
+      }
+
+      .accordion-toggle {
+        // display: inline-block;
+        cursor: pointer;
+        border-bottom: 1px solid white;
+      }
+
+      .accordion-toggle:hover * {
+        color: $white-hover;
+      }
+
+      .accordion-content {
+        display: none;
+        list-style: none;
+        padding: 0;
+        border-bottom: 1px solid;
+        margin-bottom: 1rem;
+
+        .project-description {
+          margin: 1rem 0 2.5rem;
+          font-size: 1.1rem;
+          font-weight: 300;
+          color: $white;
+          letter-spacing: 1px;
+          line-height: 1.3;
+        }
+
+        li {
+          margin: 2rem 1rem;
+          a {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: $white;
+            letter-spacing: 1px;
+            line-height: 1.3;
+
+            &:hover {
+              color: $white-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .project-archive-column_2 {
+    display: flex;
+    width: 45%;
+    padding: 7em 3em 3em;
+    transition: opacity 1.2s ease-in, transform 1.2s ease-in;
+    transition-delay: 200ms;
+
+    @media screen and (max-width: 930px) {
+      width: 100%;
+      padding: 0;
+    }
+
+    .projects-main-gallery-container {
+      margin-top: 45px;
+
+      .projects-gallery {
+        padding-left: 0;
+      }
+
+      @media screen and (max-width: 945px) {
+        margin: 45px auto 0;
+      }
+    }
+  }
+}

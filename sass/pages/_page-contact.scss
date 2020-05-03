@@ -1,0 +1,40 @@
+// Contact Page
+.contact-main {
+  display: flex;
+  align-items: center;
+  margin: 2.5rem;
+  height: 100%;
+
+  @media (max-width: 600px) {
+    margin: 3.5rem 2rem 2rem;
+  }
+
+  .contact-text-details {
+    transition: opacity 800ms ease-in, transform 800ms ease-in;
+
+    @media (max-width: 600px) {
+      margin-left: 0;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+
+    strong {
+      margin-bottom: 5vh;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+
+      &:hover {
+        color: $white-hover;
+      }
+    }
+
+    a:last-child {
+      margin-bottom: 2vh;
+    }
+  }
+}

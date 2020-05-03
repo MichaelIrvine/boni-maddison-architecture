@@ -1,0 +1,46 @@
+html {
+  font-size: 16px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  color: $white;
+}
+
+p,
+a {
+  font-family: 'Helvetica Neue', sans-serif;
+  letter-spacing: 1.3px;
+  color: $white;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Helvetica Neue', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 400;
+  @media (max-width: 420px) {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+button {
+  color: $white;
+}

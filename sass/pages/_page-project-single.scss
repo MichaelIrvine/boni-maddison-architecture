@@ -1,0 +1,76 @@
+.single-project-main {
+  margin: 2.5rem;
+  margin-bottom: 15vh;
+
+  @media screen and (max-width: 930px) {
+    height: auto;
+    margin-bottom: 20vh;
+  }
+
+  .project-singular {
+    display: flex;
+
+    @media screen and (max-width: 930px) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 1400px) {
+      justify-content: center;
+    }
+
+    .project-info {
+      width: 42%;
+      padding: 2rem;
+      padding-left: 0;
+
+      @media screen and (max-width: 930px) {
+        width: 95%;
+        border: none;
+        padding: 0;
+      }
+
+      h2 {
+        display: inline-block;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        border: 1px solid $dark-grey;
+        border-right: 0;
+        border-left: 0;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .project-singular-gallery {
+      padding: 2rem;
+
+      @media screen and (max-width: 930px) {
+        width: 95%;
+        padding: 0;
+        margin-top: 5rem;
+      }
+
+      .single-project-gallery {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.back-button {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 400;
+
+  @media (max-width: 1024px) {
+    margin: 1rem;
+    margin-left: 0;
+  }
+
+  &:hover {
+    color: $white-hover;
+  }
+}
